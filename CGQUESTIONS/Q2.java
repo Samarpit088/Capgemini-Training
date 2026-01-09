@@ -1,0 +1,16 @@
+package CGQUESTIONS;
+
+import java.util.Scanner;
+
+public class Q2 {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        String str = sc.nextLine();
+        String[] arr = str.split(" ");
+        String res = "";
+        for(String s:arr){
+            res = res + new StringBuilder(s).reverse().toString() + " ";
+        }
+        System.out.println(res);
+    }
+}
